@@ -1,0 +1,86 @@
+/* 1. Nền và phông chữ chung */
+body {
+    font-family: 'Hiragino Sans', 'Meiryo', sans-serif; /* Phông tiếng Nhật chuẩn, đẹp */
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.8;
+}
+
+/* 2. Phần Đầu (Header - Nền đen sang trọng) */
+.phun-dau {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+/* Trang trí Ảnh đại diện tròn */
+.anh-dai-dien {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%; /* Bo tròn ảnh */
+    border: 3px solid white;
+    object-fit: cover;
+}
+
+.phun-dau h1 {
+    margin-top: 15px;
+    font-size: 24px;
+}
+
+/* 3. Phần Nội dung chính */
+.phun-noidung {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+h2 {
+    color: #222;
+    border-bottom: 2px solid #007bff; /* Kẻ gạch chân màu xanh */
+    padding-bottom: 5px;
+    margin-top: 30px;
+}
+
+/* 4. Bộ sưu tập ảnh (Gallery) */
+.danh-sach-anh {
+    display: flex;
+    flex-wrap: wrap; /* Tự xuống hàng khi màn hình nhỏ */
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.khung-anh {
+    background-color: white;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    flex: 1;
+    min-width: 200px;
+    text-align: center;
+}
+
+.khung-anh img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.khung-anh p {
+    margin-top: 8px;
+    font-size: 14px;
+    color: #666;
+}
+
+/* 5. Chân trang (Footer) */
+.phun-chan {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    font-size: 14px;
+}
