@@ -54,36 +54,30 @@ h2 {
     margin-top: 25px;
 }
 
-
 .khung-anh {
-    background-color: white;
-    padding: 18px;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-    flex: 1 1 280px;          
-    min-width: 280px;         
-    max-width: 100%;             
+    background-color: #ffffff;
+    border: 1px solid #ddd;      
+    border-radius: 6px;           
+    padding: 12px;                
+    flex: 1 1 280px;
+    min-width: 280px;
     text-align: center;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-
-
 }
 
 
 .khung-anh img {
     width: 100%;
-    height: 220px;           
+    height: 180px;               
     object-fit: cover;
-    border-radius: 8px;
+    border-radius: 4px;
 }
 
+
 .khung-anh p {
-    margin-top: 12px;
-    font-size: 16px;
-    font-weight: bold;
-    color: #444;
+    margin-top: 10px;
+    font-size: 15px;
+    color: #333333;             
+}
 }
 
 
