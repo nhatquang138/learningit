@@ -1,6 +1,5 @@
-/* 1. Nền và phông chữ chung */
 body {
-    font-family: 'Hiragino Sans', 'Meiryo', sans-serif; /* Phông tiếng Nhật chuẩn, đẹp */
+    font-family: 'Hiragino Sans', 'Meiryo', sans-serif; 
     margin: 0;
     padding: 0;
     background-color: #f5f5f5;
@@ -8,30 +7,28 @@ body {
     line-height: 1.8;
 }
 
-/* 2. Phần Đầu (Header - Nền đen sang trọng) */
-.phun-dau {
+.phundau {
     background-color: #222;
     color: white;
     text-align: center;
     padding: 40px 20px;
 }
 
-/* Trang trí Ảnh đại diện tròn */
-.anh-dai-dien {
-    width: 120px;
-    height: 120px;
-    border-radius: 50%; /* Bo tròn ảnh */
+.anhdaidien {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%; 
     border: 3px solid white;
     object-fit: cover;
 }
 
-.phun-dau h1 {
+.phandau h1 {
     margin-top: 15px;
     font-size: 24px;
 }
 
-/* 3. Phần Nội dung chính */
-.phun-noidung {
+
+.phannoidung {
     max-width: 800px;
     margin: 30px auto;
     padding: 0 20px;
@@ -39,44 +36,42 @@ body {
 
 h2 {
     color: #222;
-    border-bottom: 2px solid #007bff; /* Kẻ gạch chân màu xanh */
+    border-bottom: 2px solid #007bff;
     padding-bottom: 5px;
     margin-top: 30px;
 }
 
-/* 4. Bộ sưu tập ảnh (Gallery) */
-.danh-sach-anh {
+.danhsachanh {
     display: flex;
-    flex-wrap: wrap; /* Tự xuống hàng khi màn hình nhỏ */
+    flex-wrap: wrap; 
     gap: 20px;
     margin-top: 20px;
 }
 
-.khung-anh {
+.khunganh {
     background-color: white;
-    padding: 10px;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    flex: 1;
-    min-width: 200px;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    flex: 1 1 210px;
+    min-width: 230px;
     text-align: center;
 }
 
-.khung-anh img {
+.khunganh img {
     width: 100%;
-    height: 180px;
+    height: 220px;
     object-fit: cover;
-    border-radius: 5px;
+    border-radius: 6px;
 }
 
-.khung-anh p {
-    margin-top: 8px;
-    font-size: 14px;
+.khunganh p {
+    margin-top: 10px;
+    font-size: 15px;
     color: #666;
 }
 
-/* 5. Chân trang (Footer) */
-.phun-chan {
+.phunchan {
     background-color: #333;
     color: white;
     text-align: center;
