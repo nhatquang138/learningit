@@ -1,25 +1,32 @@
+/* Custom Reset & General Styles */
+* {
+    box-sizing: border-box;
+}
+
 body {
     font-family: 'Hiragino Sans', 'Meiryo', sans-serif; 
     margin: 0;
     padding: 0;
-    background-color: #f5f5f5;
+    background-color: #f8f9fa;
     color: #333;
     line-height: 1.8;
 }
 
-.phundau {
+/* Header */
+.phandau {
     background-color: #222;
     color: white;
     text-align: center;
-    padding: 40px 20px;
+    padding: 50px 20px;
 }
 
 .anhdaidien {
     width: 150px;
     height: 150px;
     border-radius: 50%; 
-    border: 3px solid white;
+    border: 4px solid white;
     object-fit: cover;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
 }
 
 .phandau h1 {
@@ -27,55 +34,70 @@ body {
     font-size: 24px;
 }
 
-
+/* Main Content */
 .phannoidung {
-    max-width: 800px;
-    margin: 30px auto;
+    max-width: 900px;
+    margin: 40px auto;
     padding: 0 20px;
 }
 
 h2 {
     color: #222;
-    border-bottom: 2px solid #007bff;
-    padding-bottom: 5px;
-    margin-top: 30px;
+    border-bottom: 3px solid #007bff;
+    padding-bottom: 8px;
+    margin-top: 40px;
 }
 
-.danhsachanh {
+/* Gallery - Danh sách ảnh */
+.danh-sach-anh {
     display: flex;
     flex-wrap: wrap; 
-    gap: 20px;
-    margin-top: 20px;
+    gap: 24px;
+    margin-top: 25px;
 }
 
-.khunganh {
+/* Khung ảnh - Làm to & Đổ bóng đẹp hơn */
+.khung-anh {
     background-color: white;
-    padding: 15px;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    flex: 1 1 210px;
-    min-width: 230px;
+    padding: 18px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    flex: 1 1 250px;             /* Kích thước thẻ linh hoạt hơn */
+    min-width: 250px;            /* Khung rộng tối thiểu 250px */
     text-align: center;
+    transition: transform 0.2s ease, box-shadow 0.2s ease; /* Hiệu ứng mượt */
 }
 
-.khunganh img {
+/* Hiệu ứng nhích nhẹ lên khi di chuột vào thẻ */
+.khung-anh:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.khung-anh img {
     width: 100%;
-    height: 220px;
+    height: 220px;               /* Ảnh cao 220px rất cân đối */
     object-fit: cover;
-    border-radius: 6px;
+    border-radius: 8px;
 }
 
-.khunganh p {
-    margin-top: 10px;
-    font-size: 15px;
-    color: #666;
+.khung-anh p {
+    margin-top: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #444;
 }
 
-.phunchan {
-    background-color: #333;
-    color: white;
+/* Footer */
+.phan-chan {
+    background-color: #222;
+    color: #bbb;
     text-align: center;
-    padding: 20px;
-    margin-top: 40px;
+    padding: 25px 20px;
+    margin-top: 50px;
     font-size: 14px;
+}
+
+.phan-chan p {
+    margin: 5px 0;
 }
