@@ -11,14 +11,14 @@ body {
     line-height: 1.8;
     
 
-.phandau {
+.header {
     background-color: #222;
     color: white;
     text-align: center;
     padding: 50px 20px;
 }
 
-.anhdaidien {
+.profilepicture {
     width: 150px;
     height: 150px;
     border-radius: 50%; 
@@ -27,13 +27,13 @@ body {
     
 }
 
-.phandau h1 {
+.header h1 {
     margin-top: 15px;
     font-size: 24px;
 }
 
 
-.phannoidung {
+.main {
     max-width: 1000px; 
     margin: 30px auto;
     padding: 0 20px;
@@ -47,7 +47,7 @@ h2 {
 }
 
 
-.danh-sach-anh {
+.gallery-item {
     display: flex;
     flex-wrap: wrap; 
     gap: 24px;
@@ -81,7 +81,7 @@ h2 {
 }
 
 
-.phan-chan {
+.footer {
     background-color: #222;
     color: #bbb;
     text-align: center;
@@ -90,6 +90,6 @@ h2 {
     font-size: 14px;
 }
 
-.phan-chan p {
+.footer p {
     margin: 5px 0;
 }
