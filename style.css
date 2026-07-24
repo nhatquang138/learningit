@@ -10,6 +10,7 @@ body {
     background-color: #f8f9fa;
     color: #333;
     line-height: 1.8;
+    -webkit-font-smoothing: antialiased; /* Giúp chữ hiển thị sắc nét hơn */
 }
 
 /* Header */
@@ -56,16 +57,17 @@ h2 {
     margin-top: 25px;
 }
 
-/* Khung ảnh - Làm to & Đổ bóng đẹp hơn */
+/* Khung ảnh */
 .khung-anh {
     background-color: white;
     padding: 18px;
     border-radius: 12px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-    flex: 1 1 250px;             /* Kích thước thẻ linh hoạt hơn */
-    min-width: 250px;            /* Khung rộng tối thiểu 250px */
+    flex: 1 1 250px;             
+    min-width: 0;                /* Sửa từ 250px thành 0 để không bị tràn trên màn hình siêu nhỏ */
+    max-width: 100%;             
     text-align: center;
-    transition: transform 0.2s ease, box-shadow 0.2s ease; /* Hiệu ứng mượt */
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 /* Hiệu ứng nhích nhẹ lên khi di chuột vào thẻ */
@@ -76,7 +78,7 @@ h2 {
 
 .khung-anh img {
     width: 100%;
-    height: 220px;               /* Ảnh cao 220px rất cân đối */
+    height: 220px;               
     object-fit: cover;
     border-radius: 8px;
 }
