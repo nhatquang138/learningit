@@ -9,10 +9,8 @@ body {
     background-color: #f8f9fa;
     color: #333;
     line-height: 1.8;
-    -webkit-font-smoothing: antialiased; /* Giúp chữ hiển thị sắc nét hơn */
-}
+    
 
-/* Header */
 .phandau {
     background-color: #222;
     color: white;
@@ -34,9 +32,9 @@ body {
     font-size: 24px;
 }
 
-/* Main Content */
+
 .phannoidung {
-    max-width: 1000px; /* Rộng rãi để chứa ảnh to */
+    max-width: 1000px; 
     margin: 30px auto;
     padding: 0 20px;
 }
@@ -48,7 +46,7 @@ h2 {
     margin-top: 40px;
 }
 
-/* Bố cục danh sách ảnh */
+
 .danh-sach-anh {
     display: flex;
     flex-wrap: wrap; 
@@ -56,29 +54,27 @@ h2 {
     margin-top: 25px;
 }
 
-/* Khung chứa ảnh (Tăng kích thước to hơn) */
+
 .khung-anh {
     background-color: white;
     padding: 18px;
     border-radius: 12px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-    flex: 1 1 280px;          /* Tăng từ 250px -> 280px để khung rộng hơn */
-    min-width: 280px;         /* Đảm bảo khung không bị quá nhỏ trên màn hình lớn */
+    flex: 1 1 280px;          
+    min-width: 280px;         
     max-width: 100%;             
     text-align: center;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 
-.khung-anh:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+
 }
 
-/* Bức ảnh (To hơn & chuẩn dáng hình chữ nhật) */
+
 .khung-anh img {
     width: 100%;
-    height: 220px;            /* Tăng từ 180px -> 220px giúp ảnh to và nét */
+    height: 220px;           
     object-fit: cover;
     border-radius: 8px;
 }
@@ -90,7 +86,7 @@ h2 {
     color: #444;
 }
 
-/* Footer */
+
 .phan-chan {
     background-color: #222;
     color: #bbb;
